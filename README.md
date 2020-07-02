@@ -17,11 +17,16 @@ R（Rstudio）とgitを連携させる．
 
 ```
 git init #.gitをつくる
-git remote add origin https://github.com/<user.name>/<repository.name>.git
-git add .
-git commit -m "first upload"
-git push -u origin master
+git remote add origin https://github.com/<user.name>/<repository.name>.git #githubのリポジトリと関連付け
+git add . # 全てのファイルをステージング
+git commit -m "first upload" # 適当なコメントを付けてコミット
+git push -u origin master # プッシュ．"-u"を付けるのがポイント．
 ```
+
+## R studioでcommit
+
+あとはRstudioの機能でcommitできる．
+pushのときに-uを付け忘れると，pull/pushがグレーアウトして使えない．
 
 ## トラブルシューティング
 
