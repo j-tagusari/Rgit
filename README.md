@@ -17,4 +17,15 @@ R（Rstudio）とgitを連携させる．
 
 ```
 git init #.gitをつくる
+git remote add origin https://github.com/<user.name>/<repository.name>.git
+git add .
+git commit -m "first upload"
+git push -u origin master
+```
+
+## トラブルシューティング
+
+```
+fatal: remote origin already exists
+> git remote rm origin
 ```
